@@ -106,6 +106,38 @@
       background-color: #f1f5f9;
       border-top: 1px solid #e5e7eb;
     }
+
+    /* Styling for Contact Form */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1.2rem;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      width: 100%;
+      padding: 1rem;
+      background-color: #10b981;
+      color: white;
+      border-radius: 8px;
+      border: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .contact-form button:hover {
+      background-color: #059669;
+    }
   </style>
 </head>
 <body>
@@ -160,11 +192,13 @@
 
     <section class="section">
       <h2>Contact Us</h2>
-      <form action="https://formspree.io/f/xnndqzlr" method="POST">
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xnndqzlr" method="POST">
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </section>
 
     <footer>
