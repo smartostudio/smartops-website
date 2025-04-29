@@ -1,86 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SmartOps Studio – Automations & Reporting</title>
-  <meta name="description" content="We help small teams move faster with automated reports, dashboards, and workflows.">
-  <meta name="keywords" content="automation, reporting, google sheets, zapier, notion, smartops studio">
-  <meta name="author" content="SmartOps Studio">
-  <meta property="og:title" content="SmartOps Studio – Automations & Reporting">
-  <meta property="og:description" content="We help small teams move faster with automated reports, dashboards, and workflows.">
-  <meta property="og:url" content="https://smartopsstudio.netlify.app">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SmartOps Studio">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartOps Studio</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero-content">
-      <h1>SmartOps Studio</h1>
-      <p>Automate your reports, dashboards & workflows</p>
-      <a class="cta" href="mailto:smartostudio@gmail.com">Get in Touch</a>
+  <header>
+    <div class="container">
+      <h1>Welcome to SmartOps Studio</h1>
+      <p>Start your automation journey with us</p>
+      <a href="#contact-form" class="cta">Request a Free Audit</a>
     </div>
   </header>
 
-  <section class="section services">
-    <h2>Our Services</h2>
-    <p>Helping small teams move faster, smarter, and more efficiently through automation.</p>
-    <div class="services-cards">
-      <div class="service-card">
-        <h3>📊 Google Sheets Automation</h3>
-        <p>Automate your data workflows with custom Google Sheets solutions.</p>
-      </div>
-      <div class="service-card">
-        <h3>🧠 Notion Customization</h3>
-        <p>Create personalized dashboards and systems to track everything.</p>
-      </div>
-      <div class="service-card">
-        <h3>⚡ Zapier & Power Automate</h3>
-        <p>Connect apps and automate your work with seamless integrations.</p>
-      </div>
-    </div>
-  </section>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section class="testimonial">
-    <h2>Client Testimonials</h2>
-    <div class="testimonial-content">
-      <p>"SmartOps transformed our reporting process. Highly recommend!" – Sarah, Sales Manager</p>
-      <p>"Their Notion system made team collaboration effortless." – James, Startup Founder</p>
-    </div>
-  </section>
-
-  <section class="section portfolio">
-    <h2>Our Portfolio</h2>
-    <div class="portfolio-grid">
-      <div class="portfolio-item">
-        <h3>📊 Automated Sales Dashboard</h3>
-        <p>Real-time data updates with automated reports.</p>
-      </div>
-      <div class="portfolio-item">
-        <h3>🧠 Notion CRM</h3>
-        <p>Custom database for client tracking and team collaboration.</p>
-      </div>
-      <div class="portfolio-item">
-        <h3>⚡ Zapier Workflow</h3>
-        <p>Automated Slack notifications triggered by new form submissions.</p>
-      </div>
-    </div>
+  <section class="section">
+    <h2>Request a Free Audit</h2>
+    <p>Send us a quick summary of what you're struggling with or want automated. We’ll respond with a free outline of what’s possible within 24 hours.</p>
+    
+    <form action="https://formspree.io/f/meogeawv" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Tell us about your automation need..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 SmartOps Studio. All rights reserved.</p>
+    <p>© 2025 SmartOps Studio. Let’s build automations that work.</p>
+    <p><a href="contact.html">Contact us</a></p>
   </footer>
-
-  <script src="scripts.js"></script>
 </body>
 </html>
