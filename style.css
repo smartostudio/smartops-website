@@ -17,111 +17,92 @@ header {
   text-align: center;
 }
 
-header h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+header .container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-header .intro {
-  font-size: 18px;
-  margin-bottom: 20px;
+h1 {
+  font-size: 2.5rem;
+}
+
+p.intro {
+  font-size: 1.2rem;
 }
 
 .cta {
-  background-color: #ff4081;
-  color: white;
+  background-color: #ff6f61;
   padding: 10px 20px;
   text-decoration: none;
+  color: white;
   border-radius: 5px;
-  font-size: 16px;
 }
 
 nav {
-  background-color: #282c34;
-  padding: 10px 0;
-  text-align: center;
+  background-color: #333;
 }
 
 nav ul {
+  display: flex;
+  justify-content: center;
   list-style: none;
-  padding: 0;
+  padding: 10px 0;
 }
 
 nav ul li {
-  display: inline-block;
-  margin-right: 20px;
+  margin: 0 20px;
 }
 
 nav ul li a {
-  color: white;
   text-decoration: none;
-  font-size: 16px;
-}
-
-nav ul li a:hover {
-  color: #ff4081;
-}
-
-main {
-  padding: 60px 20px;
-}
-
-section.request-audit {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-section p {
-  font-size: 16px;
-  margin-bottom: 30px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.contact-form button {
-  background-color: #ff4081;
   color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.contact-form button:hover {
-  background-color: #e83672;
+  font-weight: bold;
 }
 
 footer {
   background-color: #282c34;
   color: white;
+  padding: 20px 0;
   text-align: center;
-  padding: 20px;
-}
-
-footer p {
-  font-size: 14px;
 }
 
 footer a {
-  color: #ff4081;
+  color: #ff6f61;
   text-decoration: none;
 }
 
-footer a:hover {
-  color: #e83672;
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact-form button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.services {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.services li {
+  margin-bottom: 10px;
+}
+
+.portfolio-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio-item {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
