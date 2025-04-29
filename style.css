@@ -151,3 +151,36 @@ footer {
 .navbar a:hover {
   color: #10b981;
 }
+
+.services-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 1.5rem auto;
+  max-width: 600px;
+}
+
+.services-list li {
+  margin: 0.8rem 0;
+  font-size: 1.2rem;
+}
+
+.services-list a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.services-list a:hover {
+  text-decoration: underline;
+}
+
+.service-detail {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.service-detail h3 {
+  color: #10b981;
+  margin-bottom: 0.5rem;
+}
+
