@@ -1,237 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SmartOps Studio – Automations & Reporting</title>
-  <meta name="description" content="We help small teams move faster with automated reports, dashboards, and workflows.">
-  <meta name="keywords" content="automation, reporting, google sheets, zapier, notion, smartops studio">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SmartOps Studio helps small businesses and teams automate workflows using tools like Notion, Zapier, Google Sheets, and AI.">
+  <meta name="keywords" content="automation, notion, zapier, data ops, google sheets, AI automation, smartops studio">
   <meta name="author" content="SmartOps Studio">
-  <meta property="og:title" content="SmartOps Studio – Automations & Reporting">
-  <meta property="og:description" content="We help small teams move faster with automated reports, dashboards, and workflows.">
-  <meta property="og:url" content="https://smartopsstudio.netlify.app">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SmartOps Studio">
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to bottom, #f0f4f8, #ffffff);
-      color: #333;
-      transition: background-color 0.3s ease-in-out;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-      text-align: center;
-      transition: transform 0.3s ease-in-out;
-    }
-    header {
-      background-color: #4f46e5;
-      color: white;
-      padding: 3rem 1rem;
-      border-radius: 0 0 20px 20px;
-      animation: fadeIn 1s ease-out;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      animation: slideIn 1s ease-out;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin: 0.3rem 0;
-    }
-    .cta {
-      margin-top: 1.5rem;
-      padding: 0.75rem 2rem;
-      background-color: #10b981;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      display: inline-block;
-      transition: background 0.3s;
-    }
-    .cta:hover {
-      background-color: #059669;
-    }
-    .section {
-      margin-top: 4rem;
-      opacity: 0;
-      animation: fadeIn 1.5s ease-out forwards;
-    }
-    .services ul {
-      list-style-type: none;
-      padding: 0;
-      font-size: 1.1rem;
-    }
-    .services li {
-      padding: 0.6rem 0;
-    }
-    section h2 {
-      color: #4f46e5;
-      font-size: 2rem;
-    }
-    a {
-      color: #4f46e5;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-      text-align: left;
-      opacity: 0;
-      animation: fadeIn 2s ease-out forwards;
-    }
-    .portfolio-item {
-      background: #ffffff;
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-    }
-    .testimonial {
-      font-style: italic;
-      margin: 1.5rem auto;
-      max-width: 700px;
-    }
-    footer {
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #888;
-      padding: 2rem 1rem;
-      background-color: #f1f5f9;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    /* Styling for Contact Form */
-    .contact-form {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 2rem;
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      opacity: 0;
-      animation: fadeIn 1.5s ease-out forwards;
-    }
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 1rem;
-      margin-bottom: 1.2rem;
-      border-radius: 8px;
-      border: 1px solid #e5e7eb;
-      font-size: 1rem;
-    }
-    .contact-form button {
-      width: 100%;
-      padding: 1rem;
-      background-color: #10b981;
-      color: white;
-      border-radius: 8px;
-      border: none;
-      font-size: 1.1rem;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    .contact-form button:hover {
-      background-color: #059669;
-    }
-
-    /* Animation Keyframes */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-    @keyframes slideIn {
-      from {
-        transform: translateX(-100%);
-      }
-      to {
-        transform: translateX(0);
-      }
-    }
-  </style>
+  <title>SmartOps Studio | Automate & Grow</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>SmartOps Studio</h1>
-      <p>We automate your reports, dashboards & workflows.</p>
-      <p><strong>Google Sheets | Notion | Zapier | Power Automate</strong></p>
-      <a class="cta" href="mailto:smartostudio@gmail.com">Contact Us</a>
-    </header>
+  <header class="container">
+    <h1>SmartOps Studio</h1>
+    <p>Automation solutions for small businesses & teams</p>
+    <a href="#contact" class="cta">Book a Free Discovery Call</a>
+  </header>
 
-    <section class="section services">
-      <h2>What We Do</h2>
-      <p>Helping small teams work faster, smarter, and more efficiently through automation.</p>
-      <ul>
-        <li>Google Sheets automation</li>
-        <li>Custom Notion systems</li>
-        <li>Zapier & Power Automate integrations</li>
-        <li>Dashboards and reporting workflows</li>
-      </ul>
-    </section>
+  <section class="container section">
+    <h2>What We Do</h2>
+    <p>We automate repetitive tasks using tools like Google Sheets, Notion, Zapier, and custom scripts so you can focus on growth.</p>
+    <ul class="services">
+      <li>✓ Google Sheets Automations</li>
+      <li>✓ Notion Dashboard Systems</li>
+      <li>✓ CRM Setup & Automations</li>
+      <li>✓ Zapier + API Integration</li>
+      <li>✓ AI Content & Data Pipelines</li>
+    </ul>
+  </section>
 
-    <section class="section">
-      <h2>Why SmartOps?</h2>
-      <p>Fast delivery, clear documentation, and automation tailored to your needs.</p>
-    </section>
-
-    <section class="section">
-      <h2>Testimonials</h2>
-      <p class="testimonial">"SmartOps completely transformed how we track and report sales. We save hours every week!" – Sarah, Sales Manager</p>
-      <p class="testimonial">"They built a Notion dashboard so intuitive, our whole team adopted it in days." – James, Startup Founder</p>
-      <p class="testimonial">"Efficient, friendly, and fast — highly recommend!" – Anita, Operations Lead</p>
-    </section>
-
-    <section class="section">
-      <h2>Our Portfolio</h2>
-      <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <h3>📊 Automated Sales Dashboard</h3>
-          <p>Daily-updating Google Sheets dashboard for a retail team.</p>
-        </div>
-        <div class="portfolio-item">
-          <h3>🧠 Notion CRM Setup</h3>
-          <p>Custom Notion database for client tracking and pipeline management.</p>
-        </div>
-        <div class="portfolio-item">
-          <h3>⚡ Zapier Automation</h3>
-          <p>Email alerts & Slack notifications from a Google Form submission.</p>
-        </div>
+  <section class="container section">
+    <h2>Why Clients Choose Us</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <h3>Save 10+ Hours/Week</h3>
+        <p>Our clients save hours every week by automating manual work — giving them time to scale or relax.</p>
       </div>
-    </section>
-
-    <section class="section">
-      <h2>Contact Us</h2>
-      <div class="contact-form">
-        <form action="https://formspree.io/f/xnndqzlr" method="POST">
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+      <div class="portfolio-item">
+        <h3>Fully Custom Systems</h3>
+        <p>Each automation is tailored to your exact process, making your business run like clockwork.</p>
       </div>
-    </section>
+      <div class="portfolio-item">
+        <h3>Fast Delivery</h3>
+        <p>Projects go live within 2–5 days so you start seeing impact and ROI quickly.</p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      &copy; 2025 SmartOps Studio. All rights reserved.
-    </footer>
-  </div>
+  <section class="container section" id="contact">
+    <h2>Let's Automate Your Business</h2>
+    <p>Book a free 20-min discovery call and we’ll find your biggest automation opportunity.</p>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <textarea name="message" placeholder="What would you like to automate?" rows="5"></textarea><br>
+      <button type="submit" class="cta">Submit</button>
+    </form>
+  </section>
+
+  <footer class="container">
+    <p>&copy; 2025 SmartOps Studio. Built for speed, scale, and simplicity.</p>
+  </footer>
+
 </body>
 </html>
