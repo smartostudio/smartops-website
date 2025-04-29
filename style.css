@@ -8,13 +8,13 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
   color: #333;
+  text-align: center;
 }
 
 header {
   background-color: #282c34;
   color: white;
   padding: 40px 0;
-  text-align: center;
 }
 
 header .container {
@@ -74,7 +74,7 @@ footer a {
 .contact-form input,
 .contact-form textarea,
 .contact-form button {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   margin: 10px 0;
 }
@@ -95,14 +95,20 @@ footer a {
   margin-bottom: 10px;
 }
 
-.portfolio-grid {
-  display: flex;
-  justify-content: space-around;
+.contact-details {
+  padding: 20px;
 }
 
-.portfolio-item {
-  width: 30%;
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.contact-details p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ff6f61;
+}
+
+a:hover {
+  color: #d85845;
 }
